@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .bigbox{
+            list-style:none;
+            /* margin-top:100px; */
+            /* overflow:hidden; */
+            position: relative;
+            /* height:400px; */
+        }
+        .bigbox li{
+            float:left;
+        }
+        .bigbox .box{
+            width:1090px;
+            /* height:400px; */
+            background:darkolivegreen;
+            font-size:200px;
+            border:1px solid black;
+            position:absolute;
+            top:20px;
+            /* display: none; */
+        }
+        .bigbox .box .smallt{
+            width:200px;
+            background:teal;
+            float:left;
+            margin-right:10px;
+        }
+        .bigbox .box .smallt:last-of-type{
+            margin-right:0;
+        }
+        .bigbox .box .smallt .goods{
+            margin-bottom:10px;
+            /* float:left; */
+        }
+        .bigbox .box .smallt .goods img{
+            display:block;
+            width:50px;
+            height:50px;
+            background:brown;
+            float:left;
+        }
+        .bigbox .box .smallt .goods span{
+            font-size:18px;
+            float:left;
+        }
+        .bigbox .box0{
+            display:none;
+        }
+        .bigbox .box1{
+            display:none;
+        }
+    </style>
+    <script src="jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                type: "get",
+                url: "indexList.json",
+                success:function(arr){
+                    console.log(arr);
+                    for(var i = 0; i < 6; i++){
+                        var node = 
+                                    `
+
+                                    `
+                    }
+                },
+                error: function(msg){
+                    console.log(msg);
+                }
+            })
+
+            $(".bigbox").on("mouseenter", "li", function(){
+                // alert($(this).index())
+                var inDex = $(this).index();
+                $(".box").eq(inDex).css({
+                    display: "block"
+                })
+            })
+            $(".bigbox").on("mouseleave", function(){
+                $(".box").css({
+                    display: "none"
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+    <ul class="bigbox">
+        <li>
+            <a href="">服装</a>
+        </li>
+        <li>
+            <a href="">食品</a>
+        </li>
+        <div class="box box0 clearfn">
+            <div class="smallt clearfn">
+                <h2>商品标题</h2>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字</span>
+                </div>
+            </div>
+            <div class="smallt clearfn">
+                <h2>商品标题_1</h2>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字_1</span>
+                </div>
+            </div>
+        </div>
+        <div class="box box1 clearfn">
+            <div class="smallt clearfn">
+                <h2>商品标题2_1</h2>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2</span>
+                </div>
+            </div>
+            <div class="smallt clearfn">
+                <h2>商品标题2_1</h2>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+                <div class="goods clearfn">
+                    <img src="" alt="">
+                    <span>商品名字2_1</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="box box1">容器2</div> -->
+    </ul>
+    
+
+</body>
+</html>

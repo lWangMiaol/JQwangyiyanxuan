@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!-- <base target="_blank"> -->
+    <link rel="stylesheet" href="css/shopStyle.min.css">
+    <script src="js/require.js" async="true" defer data-main="js/shopMain.js"></script>
+</head>
+<body>
+   <!-- 头部 -->
+   <div id="Top">
+        <div id="Top_box">
+            <div id="Top_box_right">
+                <a href="log.html">登录 / 注册</a>
+                <span>|</span>
+                <a href="#">我的订单</a>
+                <span>|</span>
+                <a href="#">会员</a>
+                <span>|</span>
+                <a href="#">甄选家</a>
+                <span>|</span>
+                <a href="#">企业采购</a>
+                <span>|</span>
+                <a href="#">客户服务</a>
+                <span>|</span>
+                <a href="#">APP</a>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索 -->
+    <div id="Search">
+        <div id="Search_box">
+            <!-- 左侧动态图 -->
+            <div id="Search_box_left"></div>
+            <!-- 中间搜索框 -->
+            <div id="Search_box_center">
+                <input type="text">
+                <input type="submit" value="搜索">
+            </div>
+            <div id="Search_box_center_bottom">
+                <a href="#">电动牙刷 限时85折</a>
+                <span>|</span>
+                <a href="#">爆款 行李箱</a>
+                <span>|</span>
+                <a href="#">9.9元超值专区</a>
+                <span>|</span>
+                <a href="#">预售 低过11.11</a>
+            </div>
+            <!-- 右侧购物车 -->
+            <div id="Search_box_right">
+                <span>购物车</span>
+                <i class="yuan">(0)</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <ul id="Nav" class="clearfn">
+     
+       
+
+      
+   
+    </ul>
+
+    <!-- line -->
+    <div class="line"></div>
+
+    <!-- 商品容器 -->
+    <div id="shopbox" class="clearfn">
+        <!-- 商品 -->
+       <!-- <div class="picture">
+            <img src="//yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-empty-s545adfbb0c-16fa2eeb53.png?imageView&type=webp" alt="">
+       </div> -->
+        
+    </div>
+    
+    <!-- 结算 -->
+    <div id="totalbox" class="clearfn">
+        <div class="total_one">
+            <input type="checkbox" class="allCheck" id="allck">
+            <label for="allck">全选</label>
+            <button href="javascrpit:;" class="del_choseDel">批量删除</button>
+            <button href="javascrpit:;" class="del_delAll">清空购物车</button>
+        </div>
+        <div class="total_money">
+            <span>应付总额</span>
+            <span class="allprice">￥0</span>
+        </div>
+        <button class="total_btn">下单</button>
+    </div>
+
+    <!-- 客户服务 -->
+    <div id="customer">
+            <div id="customerBox">
+                <div class="customerBox_child customerBox_child1">
+                    <h4 class="customerBox_child1_h4">客户服务</h4>
+                    <a href="" class="customerBox_child1_left">
+                        <i></i>
+                        <span>在线客服</span>
+                    </a>
+                    <a href="" class="customerBox_child1_right">
+                        <i></i>
+                        <span>用户反馈</span>
+                    </a>
+                </div>
+                <div class="customerBox_child customerBox_child2">
+                    <h4>何为严选</h4>
+                    <div class="customerBox_child2_div1">
+                        网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品
+                    </div>
+                    <div class="customerBox_child2_div2">
+                        <h2 class="customerBox_child2_div2_child1">关注我们</h2>
+                        <div class="customerBox_child2_div2_child2">
+                            <i class="share_YanXuan"></i>
+                            <i class="share_WeiXin"></i>
+                            <a href="" class="share_XinLang"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="customerBox_child customerBox_child3">
+                    <h4>扫码下载严选APP</h4>
+                    <div class="customerBox_child3_div">
+                        <img src="img/erweima.png" alt="">
+                    </div>
+                    <p class="customerBox_child3_p">下载领1000元新人礼包</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 底部 -->
+        <div id="foot">
+            <div id="footBox">
+                <!-- 顶部 -->
+                <ul id="footBox_top">
+                    <li>
+                        <i class="footBox_top_i1"></i>
+                        <p>自营电商</p>
+                    </li>
+                    <li>
+                        <i class="footBox_top_i2"></i>
+                        <p>30天无忧退换货</p>
+                    </li>
+                    <li>
+                        <i class="footBox_top_i3"></i>
+                        <p>满88元免费邮</p>
+                    </li>
+                    <li>
+                        <i class="footBox_top_i4"></i>
+                        <p>品质保证</p>
+                    </li>
+                </ul>
+    
+                <!-- 横线 -->
+                <div id="footBox_border"></div>
+    
+                <!-- 底部内容 -->
+                <div id="footerBox_bottom">
+                    <ul>
+                        <li><a href="">关于我们</a></li>
+                        <span>|</span>
+                        <li><a href="">帮助中心</a></li>
+                        <span>|</span>
+                        <li><a href="">售后服务</a></li>
+                        <span>|</span>
+                        <li><a href="">配送与验收</a></li>
+                        <span>|</span>
+                        <li><a href="">商务合作</a></li>
+                        <span>|</span>
+                        <li><a href="">企业采购</a></li>
+                        <span>|</span>
+                        <li><a href="">开放平台</a></li>
+                        <span>|</span>
+                        <li><a href="">搜索推荐</a></li>
+                        <span>|</span>
+                        <li><a href="">搜索推荐</a></li>
+                        <span>|</span>
+                        <li><a href="">友情链接</a></li>
+                        <span>|</span>
+                        <li><a href="">廉正举报</a></li>
+                    </ul>
+    
+                    <p class="p1">
+                        <a href="">食品经营许可证：JY13301080111719</a>
+                        <a href="">出版物经营许可证：新出发滨字第0132号</a>
+                        妙得ICP证号：ICP 证浙B2-20160106
+                        <a href="">浙杭食药监械经营备20171029号</a>
+                        <a href="">营业执照</a>
+                        网易公司版权所有 © 1997-2019
+                    </p>
+    
+                    <p class="p2">
+                        <a href="">无线电发射设备销售备案：42201919712647</a>
+                        <a href="">（浙杭）网械企备字[2019]第00119号</a>
+                        （粤）网械平台备字（2019）第00004号
+                        <a href="">单用途商业预付卡备案证：330100AAC0024</a>
+                        <img src="//yanxuan.nosdn.127.net/86f32b668af6e537389a77480fb5c74d.gif" class="police"></img>
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
